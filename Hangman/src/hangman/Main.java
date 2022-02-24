@@ -39,7 +39,7 @@ public class Main {
 
 
             System.out.println("\nDo want to play again?");
-            System.out.println("Write yes or no .");
+            System.out.print("Write yes or no:");
 
             String answer = sc.next();
             if (answer.trim().equalsIgnoreCase("yes")) {
@@ -49,6 +49,7 @@ public class Main {
                 keepPlaying = false;
             } else {
                 System.out.println("Wrong input.");
+                keepPlaying = false;
             }
         }
     }

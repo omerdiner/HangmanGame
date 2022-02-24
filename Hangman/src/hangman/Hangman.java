@@ -190,9 +190,11 @@ public class Hangman {
     public boolean gameOver() {
         if (didWeWin()) {
             System.out.println("You won...");
+            System.out.println("It was \"" + hiddenWord + "\"");
             return true;
         } else if (didWeLose()) {
             System.out.println("You lost...");
+            System.out.println("The word was:" + hiddenWord);
             return true;
         }
 
